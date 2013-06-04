@@ -6,16 +6,13 @@ class LogStash::Filters::Splitter < LogStash::Filters::Base
     config_name "splitter"
     plugin_status "experimental"
 
-    # What to label this instance of Tattle.
-    #
-    # This is helpful as you could use multiple instances of Tattle - this would
-    # help identify which is actually being used. 
-    #
-    # Default is no label.
+    # this is the field to split
     config :splitme, :validate => :string, :default => nil
 
+    # this is what to split on
     config :spliton, :validate => :string, :default => nil
 
+    # this is the part to return
     config :returnwhich, :validate => :number, :default => nil
 
 
