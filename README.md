@@ -3,7 +3,8 @@ logstash-plugins
 
 These are some (pretty bad) plugins that I wrote to simplify some tasks for myself.
 
-splitter.rb 
+splitter.rb
+-----------
 
 For some data I was working on, using split() seemed to be the quickest way to 
 fix it up. So, I wrote this. It's pretty single-minded in purpose but could
@@ -15,6 +16,7 @@ doing the 'cat filename | awk '{print $1}' - which is pretty much what this
 could be.
 
 tattle.rb
+---------
 
 I wanted some ability to see what stuff looks like instead of logstash without
 going to using -vv.
